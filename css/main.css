@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    background-color: #5e5e5e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* PHONE */
+.phone {
+    background-color: #000;
+    height: 500px;
+    width: auto;
+    padding: 10px 5px;
+
+    border-radius: 26px;
+    box-shadow: 0px 0px 8px 5px #0000007e;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.phone-screen {
+    background-color: #fff;
+    height: 475px;
+    width: 275px;
+    border-radius: 16px;
+    padding: 10px 5px;
+}
+
+/* CALCULATOR */
+.calculator-screen {
+    margin-top: 15px;
+    padding: 0 10px;
+    text-align: right;
+    font-size: 40px;
+
+    width: 276px;
+    height: 60px;
+    letter-spacing: 0;
+    word-spacing: 0;   
+    overflow-x: auto;
+
+    border-bottom: 2px solid black;
+}
+
+.button-container {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.action-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    font-size: 25px;
+    color: black;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    background-color: #535353;
+    width: 58px;
+    height: 58px;
+
+    transition: all 0.2s ease;
+}
+
+.action-btn:active {
+    background-color: #777777;
+}
+
+.action-btn.operator:focus {
+    background-color: #7f7f7f;
+}
+
+.clear-btn {
+    color: red;
+    text-shadow: 1px 1px 0 #000;
+}
+
+.backspace-btn,
+.float-btn {
+    background-color: #000;
+    color: #fff;
+}
+
+.backspace-btn img {
+    height: 50%;
+    width: 50%;
+}
+
+.digit-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 25px;
+    color: #fff;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    background-color: #000;
+    width: 58px;
+    height: 58px;
+
+    transition: all 0.2s ease;
+}
+
+.digit-btn:active,
+.backspace-btn:active,
+.float-btn:active {
+    background-color: #3f3f3f;
+}
